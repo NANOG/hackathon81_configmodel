@@ -12,10 +12,10 @@ If you're looking for a basic, working system to expand upon, you probably want 
 
 ## Getting started with your environment
 1. Git
-   1. Click the `Fork` button at https://github.com/NANOG/hackathon81_lab
+   1. Click the `Fork` button at https://github.com/NANOG/hackathon81_configmodel
    2. On your machine:
       ```shell
-      git clone https://github.com/{YOUR_FORKED_REPO}/hackathon81_lab.git
+      git clone https://github.com:{YOUR_GITHUB_ACCOUNT_NAME}/hackathon81_configmodel.git
       ```
 2. Python virtual environments (see Cheatsheet selection below)
 
