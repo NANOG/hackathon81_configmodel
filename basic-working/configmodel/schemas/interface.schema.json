@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "interface.schema.json",
+  "title": "Interface",
+  "description": "Network device interface configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^(Ethernet|et-)[0-9]+(/[0-9]+)*$"
+    },
+    "descr": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "ipv4": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "string",
+          "format": "ipv4"
+        },
+        "mask": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 32
+        }
+      },
+      "additionalProperties": false
+    },
+    "ipv6": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "string",
+          "format": "ipv6"
+        },
+        "mask": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 128
+        }
+      },
+      "additionalProperties": false
+    },
+    "lldp": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

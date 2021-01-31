@@ -1,0 +1,9 @@
+[MESSAGES CONTROL]
+; C0103: Variable name %s doesn't conform to snake_case naming style (invalid-name)
+; E1101: Instance of %s has no %s member (no-member)
+; R0201: Method could be a function (no-self-use)
+; R0801: Similar lines in 2 files
+; R0903: Too few public methods
+; W0511: fixme
+; W0703: Catching too general exception Exception (broad-except)
+disable = C0103,E1101,R0201,R0801,R0903,W0511,W0703

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bgppeer.schema.json",
+  "title": "BGP Peer",
+  "description": "Network device BGP peer configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "local_asn": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4294967295
+    },
+    "peer_asn": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4294967295
+    },
+    "peer_v4": {
+      "type": "string",
+      "format": "ipv4"
+    },
+    "peer_v6": {
+      "type": "string",
+      "format": "ipv6"
+    }
+  },
+  "required": [
+    "local_asn",
+    "peer_asn"
+  ]
+}
