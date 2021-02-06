@@ -65,7 +65,7 @@ class TestInterface(unittest.TestCase):
         """Invalid ipv4 mask."""
         config = {
             "name": "Ethernet1",
-            "ipv4": {"address": "192.0.2.666", "mask": 33},
+            "ipv4": {"address": "192.0.2.0", "mask": 33},
         }
         try:
             validate(config, self.interface_schema, format_checker=FormatChecker())
