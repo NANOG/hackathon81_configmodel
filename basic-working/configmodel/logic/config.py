@@ -1,15 +1,11 @@
 """Logic for configuration verification."""
 
 import json
-import logging
 
 from jsonschema import FormatChecker, validate  # type: ignore
 
 from configmodel.database import session
 from configmodel.database.config import ConfigDB
-
-logging.basicConfig()
-LOG = logging.getLogger(__name__)
 
 
 def validate_config(data):
