@@ -16,3 +16,15 @@ If you're trying to get to a basic, working system from scratch (well, from a sk
 3. Contains a RESTful API
 4. Contains logic for backbone link and PNI services
 5. Persists configs and services to a database
+
+## Ideas for extending the basic system
+1. Add more schemas and templates
+2. Add more services (e.g., iBGP mesh, management)
+3. Push configs to devices
+4. Integrate with PeeringDB for PNI or IXP peering
+5. Add logging to the system
+6. Instrument the system (i.e., generate and send metrics on system utilization)
+7. Add a gRPC API
+8. Convert the JSON Schema models to OpenConfig
+9. Add timestamp, versioning, and user-attribution to the API and database
+10. Add authentication to the service
