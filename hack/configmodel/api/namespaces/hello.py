@@ -1,4 +1,4 @@
-"""Config namespace."""
+"""Hello namespace."""
 
 from flask_restx import Namespace, Resource, fields, reqparse  # type: ignore
 
