@@ -82,9 +82,10 @@ And deactivate it later with
 deactivate
 ```
 
-Install Python dependencies
+Install Python packages
 ```shell
 pip3 install -r requirements-dev.txt
+python setup.py develop
 ```
 
 Before committing code
